@@ -1,0 +1,26 @@
+Lumora Workspace Troubleshooting Guide
+======================================
+
+FICTIONAL DEMONSTRATION MATERIAL. Lumora Workspace is a fictional product.
+Product: Lumora Workspace
+
+API ERROR CODES
+---------------
+
+E104 means the API key used by your integration has expired. Expired keys cannot be renewed.
+
+To fix error E104:
+1. Generate a replacement key in Settings > API Keys.
+2. Update your application configuration to use the new key.
+3. Restart or redeploy the integration so that it reads the new configuration.
+
+E201 means the request exceeded the API rate limit. Wait one minute before retrying, and reduce the number of parallel requests.
+
+E305 means the workspace was not found. Check that the workspace ID in the request is correct and that the key has access to that workspace.
+
+SYNC PROBLEMS
+-------------
+
+If files do not sync, sign out of the sync client, sign in again, and confirm that the device has at least 1 GB of free disk space.
+
+Files with names longer than 255 characters cannot be synced. Rename the file and try again.

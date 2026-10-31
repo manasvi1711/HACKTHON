@@ -1,0 +1,14 @@
+{
+  "note": "Synthetic, fictional demonstration collection. 'test_fixtures' are adversarial documents loaded only when explicitly activated (SEED_TEST_FIXTURES=true or the test suite).",
+  "documents": [
+    {"path": "trusted/Account_Access_Guide.pdf", "collection": "trusted", "allowed_roles": ["employee", "sales", "hr", "admin"]},
+    {"path": "trusted/Billing_FAQ.html", "collection": "trusted", "allowed_roles": ["employee", "sales", "hr", "admin"]},
+    {"path": "trusted/Product_Manual_v2.md", "collection": "trusted", "allowed_roles": ["employee", "sales", "hr", "admin"]},
+    {"path": "trusted/Release_Notes_v3.md", "collection": "trusted", "allowed_roles": ["employee", "sales", "hr", "admin"]},
+    {"path": "trusted/Troubleshooting.txt", "collection": "trusted", "allowed_roles": ["employee", "sales", "hr", "admin"]},
+    {"path": "trusted/HR_Compensation_Policy.pdf", "collection": "trusted", "allowed_roles": ["hr", "admin"]},
+    {"path": "adversarial/SECURITY_TEST_Prompt_Injection.md", "collection": "test_fixtures", "allowed_roles": ["employee", "sales", "hr", "admin"]},
+    {"path": "adversarial/CONFLICT_TEST_A_Session_Policy.md", "collection": "test_fixtures", "allowed_roles": ["employee", "sales", "hr", "admin"]},
+    {"path": "adversarial/CONFLICT_TEST_B_Session_Policy.md", "collection": "test_fixtures", "allowed_roles": ["employee", "sales", "hr", "admin"]}
+  ]
+}
