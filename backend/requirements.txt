@@ -1,0 +1,12 @@
+# Runtime
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.2
+python-multipart==0.0.32
+pypdf==6.21.4
+beautifulsoup4==4.15.0
+numpy==2.5.4
+anthropic==2.3.0
+# Local embedding model (ONNX, no torch). Optional: without it the app falls back to
+# a lexical hashing embedder and reports that in /api/health.
+fastembed==0.9.1
